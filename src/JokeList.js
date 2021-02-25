@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import axios from "axios";
 class JokeList extends Component {
-  componentDidMount() {
-    axios.get("httpps://icanhazdadjoke.com/");
+  async componentDidMount() {
+    let res = await axios.get("https://icanhazdadjoke.com/", {
+      headers: { Accept: "application/json" },
+    });
   }
   render() {
     return (
