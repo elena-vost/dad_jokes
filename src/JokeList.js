@@ -1,5 +1,9 @@
 import React, { Component } from "react";
+import axios from "axios";
 class JokeList extends Component {
+  componentDidMount() {
+    axios.get("httpps://icanhazdadjoke.com/");
+  }
   render() {
     return (
       <div>
