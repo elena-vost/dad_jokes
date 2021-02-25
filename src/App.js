@@ -1,8 +1,13 @@
-import logo from "./logo.svg";
+import React, { Components } from "react";
+import JokeList from "./JokeList";
 import "./App.css";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <JokeList />
+    </div>
+  );
 }
 
 export default App;

@@ -1,5 +1,5 @@
-import React, { Components } from "react";
-class JokeList extends Components {
+import React, { Component } from "react";
+class JokeList extends Component {
   render() {
     return (
       <div>
